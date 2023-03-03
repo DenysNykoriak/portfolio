@@ -1,0 +1,25 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "semi": "warn",
+    "eqeqeq": "warn",
+    "no-console": "warn"
+  },
+  "globals": {
+    "React": "writable"
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "public/"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
